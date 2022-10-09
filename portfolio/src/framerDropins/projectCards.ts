@@ -1,0 +1,19 @@
+export const dropIn={
+    initial:{
+      opacity:0,
+      y:'-100px'
+    },
+    visible:{
+      opacity:1,
+      y:0,
+      transition:{
+        duration:1,
+        staggerChildren:1,
+        delay:1
+      }
+    },
+    exit:{
+      opacity:0,
+      y:'100px'
+    }
+  }

@@ -1,0 +1,36 @@
+export const header={
+    initial:{
+        opacity:0,
+        y:'-20px'
+    },
+    visible:{
+        opacity:1,
+        y:0,
+        transition:{
+            duration:1,
+            when:'beforeChildren',
+            staggerChildren:.4,
+        }
+    },
+    exit:{
+        opacity:0,
+        y:'20px'
+    }
+}
+export const headerButton={
+    initial:{
+        opacity:0,
+        y:'-20px'
+    },
+    visible:{
+        opacity:1,
+        y:0,
+        transition:{
+            duration:.5,
+        }
+    },
+    exit:{
+        opacity:0,
+        y:'20px'
+    }
+}
