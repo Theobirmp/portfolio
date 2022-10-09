@@ -15,7 +15,12 @@ const Projects = () => {
         </header>
           <ProjectCardsContainer>
           {cardData.map(card=>{
-              return <ProjectCard key={uuidv4()} projectName={card.name} projectTitle={card.title} summary={card.summary}/>
+              return <ProjectCard
+               key={uuidv4()} projectName={card.name}
+                projectTitle={card.title} summary={card.summary}
+                 img1={card.img1} img2={card.img2}
+                  desktop={card.desktop}
+                  link1={card.link1} link2={card.img2}/>
           })}
           </ProjectCardsContainer>
       </section>
