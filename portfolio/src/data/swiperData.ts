@@ -23,5 +23,5 @@ export const swiperData=[
     {title:'React',description:"React Router, Hooks, Context"},
     {title:'Redux',description:"Actions, Actions Creators, Reducers, Middleware,Redux Thunk"},
     {title:'Animation Libraries',description:"GSAP,Framer Motion"},
-    {title:'Utility Libraries',description:"SwiperJs,,uuid"},
+    {title:'Utility Libraries',description:"SwiperJs, MomentJs, uuid"},
 ]
