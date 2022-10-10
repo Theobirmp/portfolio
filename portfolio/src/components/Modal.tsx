@@ -12,7 +12,7 @@ const Modal = ({onClick}:modalPropTypes) => {
         variants={dropIn} initial='hidden' animate='visible' exit='exit' 
         className='p-2 md:px-0 min-h-screen absolute inset-0 mx-auto clear flex items-center justify-center
          text-black'>
-        <form className='w-[100%] h-[100%] md:w-[100%] md:h-[100%] container p-10 mt-4 md:mt-2  flex flex-col items-center justify-center gap-2'>
+        <form className='clear w-[100%] h-[100%] md:w-[100%] md:h-[100%] container p-10 mt-4 md:mt-2  flex flex-col items-center justify-center gap-2'>
             <h3 className='text-sm md:text-2xl text-white text-center'>Contact Me</h3>
             <div className='flex flex-col gap-1'>
                 <label className='text-sm self-center text-white' htmlFor="email">Email</label>

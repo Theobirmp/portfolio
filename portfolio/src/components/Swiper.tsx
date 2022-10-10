@@ -32,7 +32,7 @@ const Swiper = ({setModalNumber}:swiperType) => {
                 <h4 className="text-center bold text-4xl text-[#5DF0CE]">{swiperData[index].title}</h4>
                 <p className="text-center text-opacity-60 text-white">{swiperData[index].description}</p>
                 <button onClick={()=>setModalNumber(index+1)}
-             className='hover:scale-110 bg-[#1d5880] px-4 py-2 rounded-full text-white'>Example</button>
+             className='hidden lg:block hover:scale-110 bg-[#1d5880] px-4 py-2 rounded-full text-white'>Example</button>
         </SwiperSlide>
         ))}
     </SwiperLocal>

@@ -18,16 +18,16 @@ const ProjectCard = ({projectName,projectTitle,summary,img1,img2,desktop,link1,l
         setDetailsPressed(false)
     }
   return (
-    <motion.div className='  clear relative rounded-md bg-red-900 w-[600px] flex flex-col gap-2 items-center justify-center p-10'
+    <motion.div className='clear relative rounded-md bg-red-900 w-[340px] md:w-[600px] flex flex-col gap-2 items-center justify-center p-10'
         initial={{scale:.7}} animate={animate?{scale:1}:{scale:.6}} transition={{duration:.5}}>
             {animate?<button onClick={closeModal} className='absolute flex justify-center items-center right-[10px] top-[10px] w-[40px] h-[40px] rounded-full'><AiOutlineCloseCircle color='#5DF0CE' size={50}/></button>:''}
             <header>
-                <motion.h1 animate={animate?{fontSize:'40px'}:{fontSize:'70px'}}  className={` text-center text-[#5DF0CE] min-w-max`}>{projectName}</motion.h1>
+                <motion.h1 animate={animate?{fontSize:'40px'}:{fontSize:'70px'}}  className={` text-center text-[#5DF0CE] md:min-w-max`}>{projectName}</motion.h1>
             </header>
             <motion.p className={`${animate?'hidden':'inline-block'} text-md text-white text-center md:text-left`} animate={animate?{scale:0}:{scale:1,fontSize:'30px'}}>{projectTitle}</motion.p>
         <motion.div animate={animate?{display:"flex"}:{display:'none'}}
          className={`flex ${desktop?'flex-col':'flex-col'} ${desktop?'md:flex-col':'md:flex-row'} gap-4`}>
-            <div className={`${desktop?'w-[300px]':'h-[300px] '} relative`}>
+            <div className={`${desktop?'w-[300px]':'h-[300px] mb-10'} relative`}>
                 <div className={`absolute  inset-0 z-20
                  pointer-events-none bg-[#373636] opacity-60 text-white
                   text-center flex items-center justify-center
@@ -55,7 +55,7 @@ const ProjectCard = ({projectName,projectTitle,summary,img1,img2,desktop,link1,l
                     transition={{duration:.7,delay:.3}}/>
             </div>
             </motion.div>
-        <motion.p className='text-md text-white my-2 text-center md:text-start' 
+        <motion.p className='text-md text-white my-4 text-center md:text-start' 
         variants={dropIn} initial='hidden' animate={animate?'visible':''} exit='exit'>{summary}</motion.p>
         <div className='flex gap-20'>
         <motion.button

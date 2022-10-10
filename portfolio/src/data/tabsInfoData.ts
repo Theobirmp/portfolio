@@ -1,5 +1,5 @@
 const tabsInfoData=[
-    {title:'About Me',description:'Hello, I am Fanis, a CS degree graduate and Front End Developer with a passion for everyting Web Related'},
+    {title:'About Me',description:'Hello, I am Fanis, a CS degree graduate and Front End Developer with a passion for everyting Web Related.'},
     {title:'Experience',description:`I have worked in the industry as
      a Front End Developer as a part of a LAMP stack.
     In my previous role i was responsible for developing
