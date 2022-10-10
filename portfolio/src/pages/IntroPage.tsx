@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import burger from '../img/burger.jpg';
 import { Link } from "react-router-dom";
 import { dropIn,dropInInner } from "../framerDropins/introPageDropIn";
+import AnimatedBoxes from "../components/AnimatedBoxes";
 const Page1 = () => {
     
   return (
@@ -10,11 +11,12 @@ const Page1 = () => {
         <header className=" text-2xl md:text-[4.25vw] text-white w-[100%] h-[100%] flex flex-col lg:flex-row">
             <motion.div
              initial={{opacity:0}} animate={{opacity:1,transition:{delay:5,duration:2}}}
-              className=" p-4 lg:p-0 flex-1 h-[100%] flex  justify-center items-center">
-                <img src={burger} alt="creator" />
+              className="p-4 lg:p-0 flex-1 h-[100%] flex  justify-center items-center">
+                {/* <img src={burger} alt="creator" /> */}
+                <AnimatedBoxes/>
             </motion.div>
             <motion.h1 variants={dropIn} initial='initial' animate='visible'
-                        className="flex flex-col items-start p-2 md:p-10 justify-center gap-2 md:gap-20 flex-1 h-[100%]">
+                        className=" flex flex-col items-start p-2 md:p-10 justify-center gap-2 md:gap-20 flex-1 h-[100%]">
                 <motion.h3 >Hello!</motion.h3>
                 <motion.div variants={dropInInner}>
                     <motion.span variants={dropIn}> I</motion.span>
