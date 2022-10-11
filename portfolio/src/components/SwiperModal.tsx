@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import {swiperDataCards} from '../data/swiperData'
 import dropIn from '../framerDropins/swiperModal'
 import swiperModalType from '../types/swiperModalTypes'
-import {GiCancel} from 'react-icons/gi'
+import {MdOutlineCancel} from 'react-icons/md'
 import React from 'react'
 import backdropTypes from '../types/backdropTypes'
 import { useRef } from 'react'
@@ -39,7 +39,7 @@ const SwiperModal = ({modalNumber,setModalNumber}:swiperModalType) => {
         className='relative p-8 clear flex items-center justify-center gap-10
          text-black max-h-[800px] overflow-hidden'>
             <button onClick={()=>setModalNumber(0)}
-             className='absolute right-2 top-2 '><GiCancel color='white'/></button>
+             className='absolute right-2 top-2 '><MdOutlineCancel color='white'/></button>
             <div 
                 onMouseOver={focusImage1} onMouseLeave={unfocusImage1}
                 className='shadow-md flex gap-4 border-solid border-white border-[2px]'>
