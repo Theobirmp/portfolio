@@ -5,6 +5,7 @@ import {modalPropTypes} from '../types/modalPropTypes'
 import {AiOutlineCloseCircle} from 'react-icons/ai'
 import { useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 const Modal = ({onClick}:modalPropTypes) => {
     const [email,setEmail]=useState<string>('')
     const [message,setMessage]=useState<string>('')
@@ -14,13 +15,19 @@ const Modal = ({onClick}:modalPropTypes) => {
     const handleEmailChange=(e:React.FormEvent<HTMLInputElement>)=>{
         setEmail(e.currentTarget.value)
     }
+    const navigate=useNavigate()
     const handleSubmit=(e:any)=>{
         e.persist()
         axios({
             method: 'POST',
             url: 'https://formspree.io/f/xdojddly',
             data: {email,message},
-          }).then(message=>console.log(message))
+          }).then(message=>{
+                let path='/about'
+                navigate(path)
+                console.log('message was sent successfully')
+            }
+          )
           .catch(error=>console.log(error))
     }
   return (
