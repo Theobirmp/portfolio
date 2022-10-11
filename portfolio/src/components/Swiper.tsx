@@ -5,6 +5,7 @@ import swiperType from '../types/swiperTypes';
 import { motion } from 'framer-motion';
 import { swiperData } from '../data/swiperData';
 import {v4 as uuidv4} from 'uuid';
+
 const Swiper = ({setModalNumber}:swiperType) => {
     const width=window.innerWidth
     let numberOfSlides=3
