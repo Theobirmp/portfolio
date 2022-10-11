@@ -36,7 +36,7 @@ const ProjectCard = ({projectName,projectTitle,summary,img1,img2,desktop,link1,l
                    
             <motion.img onHoverStart={()=>setCardImageHover(true)}
                         onHoverEnd={()=>{setCardImageHover(false)}}
-                         src={img1} alt="burger"   
+                         src={img1} alt="project"   
                         className='w-[100%] h-[100%] relative z-10' 
                          animate={animate?{scale:1}:{scale:0}}
                          transition={{duration:.7,delay:.3}}/>
@@ -49,7 +49,7 @@ const ProjectCard = ({projectName,projectTitle,summary,img1,img2,desktop,link1,l
                    transition-all ease-linear duration-200`}>{desktop?'Desktop':"Mobile"}</div>
             <motion.img onHoverStart={()=>setCardImageHover2(true)}
                         onHoverEnd={()=>{setCardImageHover2(false)}}
-                     src={img2} alt="burger"   
+                     src={img2} alt="project"   
                     className='w-[100%] h-[100%] relative z-10' 
                     animate={animate?{scale:1}:{scale:0}}
                     transition={{duration:.7,delay:.3}}/>
