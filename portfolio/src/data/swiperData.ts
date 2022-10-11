@@ -21,15 +21,15 @@ import {swiperDataCardsType} from "../types/swiperDataType"
 
 
 export const swiperDataCards:swiperDataCardsType[]=[
-    {title1:'Semantic Tags,Seo Friendly',title2:'React Elements, MUI components',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
-    {title1:'title 2-1',title2:'title 2-2',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
-    {title1:'title 3-1',title2:'title 3-2',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
-    {title1:'title 4-1',title2:'title 4-2',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
-    {title1:'title 5-1',title2:'title 5-2',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
-    {title1:'title 6-1',title2:'title 6-2',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
-    {title1:'title 7-1',title2:'title 7-2',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
-    {title1:'title 8-1',title2:'title 8-2',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
-    {title1:'title 9-1',title2:'title 9-2',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/html.png'},
+    {title1:'Semantic Tags,Seo Friendly',title2:'React Elements, MUI components',img1:'../../public/img/swiperModalImages/html.png',img2:'../../public/img/swiperModalImages/jsx.png'},
+    {title1:'title 9-1',title2:'title 9-2',img1:'../../public/img/swiperModalImages/css.png',img2:'../../public/img/swiperModalImages/sass.png'},
+    {title1:'title 2-1',title2:'title 2-2',img1:'../../public/img/swiperModalImages/mui.png',img2:'../../public/img/swiperModalImages/mui2.png'},
+    {title1:'title 3-1',title2:'title 3-2',img1:'../../public/img/swiperModalImages/tailwind.png',img2:'../../public/img/swiperModalImages/tailwind2.png'},
+    {title1:'title 4-1',title2:'title 4-2',img1:'../../public/img/swiperModalImages/js.png',img2:'../../public/img/swiperModalImages/js2.png'},
+    {title1:'title 5-1',title2:'title 5-2',img1:'../../public/img/swiperModalImages/react.png',img2:'../../public/img/swiperModalImages/react2.png'},
+    {title1:'title 6-1',title2:'title 6-2',img1:'../../public/img/swiperModalImages/redux.png',img2:'../../public/img/swiperModalImages/redux2.png'},
+    {title1:'title 7-1',title2:'title 7-2',img1:'../../public/img/swiperModalImages/framer.png',img2:'../../public/img/swiperModalImages/framer2.png'},
+    {title1:'title 8-1',title2:'title 8-2',img1:'../../public/img/swiperModalImages/swiper.png',img2:'../../public/img/swiperModalImages/swiper2.png'},
 ]
 
 export const swiperData=[
