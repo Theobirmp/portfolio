@@ -18,17 +18,19 @@ const Modal = ({onClick}:modalPropTypes) => {
     const navigate=useNavigate()
     const handleSubmit=(e:any)=>{
         e.persist()
-        axios({
-            method: 'POST',
-            url: 'https://formspree.io/f/xdojddly',
-            data: {email,message},
-          }).then(message=>{
-                let path='/about'
-                navigate(path)
-                console.log('message was sent successfully')
-            }
-          )
-          .catch(error=>console.log(error))
+        // axios({
+        //     method: 'POST',
+        //     url: 'https://formspree.io/f/xdojddly',
+        //     data: {email,message},
+        //   })
+        //   .then(message=>{
+                
+        //         console.log('message was sent successfully')
+        //     }
+        //   )
+        //   .catch(error=>console.log(error))
+          let path='/about'
+          navigate(path)
     }
   return (
     <AnimatePresence exitBeforeEnter={true}>
