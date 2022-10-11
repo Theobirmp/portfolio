@@ -1,5 +1,5 @@
 import { Swiper as SwiperLocal, SwiperSlide } from 'swiper/react';
-import {FaArrowLeft,FaArrowRight} from 'react-icons/Fa'
+import {FaArrowLeft,FaArrowRight} from 'react-icons/fa'
 import { useState } from 'react';
 import swiperType from '../types/swiperTypes';
 import { motion } from 'framer-motion';

@@ -1,6 +1,5 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-import Tabs from '../components/Tabs'
 import TabsInfo from '../components/TabsInfo'
 const About = () => {
   return (
