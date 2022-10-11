@@ -36,8 +36,8 @@ const Swiper = ({setModalNumber}:swiperType) => {
         </SwiperSlide>
         ))}
     </SwiperLocal>
-        <button onClick={()=>swiper.slidePrev()} className='hasIcon md:inline-block prev absolute left-6 top-[50%] translate-y-[-50%]'><AiOutlineArrowRight className='isIcon hover:scale-110' size={40}/></button>
-        <button onClick={()=>swiper.slideNext()} className='hasIcon md:inline-block next absolute right-6 top-[50%] translate-y-[-50%]'><AiOutlineArrowLeft className='isIcon hover:scale-110' size={40}/></button>
+        <button onClick={()=>swiper.slidePrev()} className='hasIcon md:inline-block prev absolute left-6 top-[50%] translate-y-[-50%]'><AiOutlineArrowLeft className='isIcon hover:scale-110' size={40}/></button>
+        <button onClick={()=>swiper.slideNext()} className='hasIcon md:inline-block next absolute right-6 top-[50%] translate-y-[-50%]'><AiOutlineArrowRight className='isIcon hover:scale-110' size={40}/></button>
     </motion.section>
   )
 }
