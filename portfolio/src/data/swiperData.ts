@@ -1,8 +1,8 @@
 import {swiperDataCardsType} from "../types/swiperDataType"
-// import html from '../img/swiperModalImages/html.png'
+import html from '../img/swiperModalImages/html.png'
 // import mui from '../img/swiperModalImages/mui.png'
 // import mui2 from '../img/swiperModalImages/mui2.png'
-// import jsx from '../img/swiperModalImages/jsx.png'
+import jsx from '../img/swiperModalImages/jsx.png'
 // import css from '../img/swiperModalImages/css.png'
 // import sass from '../img/swiperModalImages/sass.png'
 // import tailwind from '../img/swiperModalImages/tailwind.png'
@@ -20,7 +20,7 @@ import {swiperDataCardsType} from "../types/swiperDataType"
 
 
 export const swiperDataCards:swiperDataCardsType[]=[
-    {title1:'Semantic Tags,Seo Friendly',title2:'React Elements, MUI components',img1:'/./../assets/react.svg',img2:'/./../assets/react.svg'},
+    {title1:'Semantic Tags,Seo Friendly',title2:'React Elements, MUI components',img1:html,img2:jsx},
     {title1:'title 9-1',title2:'title 9-2',img1:'../../public/img/swiperModalImages/css.png',img2:'../../public/img/swiperModalImages/sass.png'},
     {title1:'title 2-1',title2:'title 2-2',img1:'../../public/img/swiperModalImages/mui.png',img2:'../../public/img/swiperModalImages/mui2.png'},
     {title1:'title 3-1',title2:'title 3-2',img1:'../../public/img/swiperModalImages/tailwind.png',img2:'../../public/img/swiperModalImages/tailwind2.png'},

@@ -6,7 +6,6 @@ import { motion } from "framer-motion"
 import {DiReact} from 'react-icons/di'
 import {MdOutlineMenu} from 'react-icons/md'
 import resume from '../BirmpilisTheofanisResume.pdf'
-
 const Navbar = () => {
   const [modalOpen,setModalOpen]=useState<boolean>(false)
   const text='this is some text'
