@@ -18,17 +18,17 @@ const Modal = ({onClick}:modalPropTypes) => {
     const navigate=useNavigate()
     const handleSubmit=(e:any)=>{
         e.persist()
-        // axios({
-        //     method: 'POST',
-        //     url: 'https://formspree.io/f/xdojddly',
-        //     data: {email,message},
-        //   })
-        //   .then(message=>{
+        axios({
+            method: 'POST',
+            url: 'https://formspree.io/f/xdojddly',
+            data: {email,message},
+          })
+          .then(message=>{
                 
-        //         console.log('message was sent successfully')
-        //     }
-        //   )
-        //   .catch(error=>console.log(error))
+                console.log('message was sent successfully')
+            }
+          )
+          .catch(error=>console.log(error))
           let path='/about'
           navigate(path)
     }
