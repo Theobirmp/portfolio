@@ -1,4 +1,3 @@
-import '../css/AnimatedBoxes.css'
 const AnimatedBoxes = () => {
   return (
     <div className="loader">

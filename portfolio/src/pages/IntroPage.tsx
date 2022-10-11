@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import burger from '../img/burger.jpg';
 import { Link } from "react-router-dom";
 import { dropIn,dropInInner } from "../framerDropins/introPageDropIn";
 import AnimatedBoxes from "../components/AnimatedBoxes";
