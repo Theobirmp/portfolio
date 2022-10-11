@@ -15,7 +15,7 @@ const Modal = ({onClick}:modalPropTypes) => {
         setEmail(e.currentTarget.value)
     }
     const handleSubmit=(e:any)=>{
-        e.preventDefault()
+        e.persist()
         axios({
             method: 'POST',
             url: 'https://formspree.io/f/xdojddly',
