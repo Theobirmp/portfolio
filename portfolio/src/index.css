@@ -2,112 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-img{
+img {
   display: block;
   max-height: 100%;
-  object-fit: contain; 
+  object-fit: contain;
 }
-.clear{
-  background: rgba( 255, 255, 255, 0.05 );
+.clear {
+  background: rgba(255, 255, 255, 0.05);
   /* box-shadow: 0 8px 32px 0 rgba(44, 55, 211, 0.37); */
-  backdrop-filter: blur( 20px );
-  -webkit-backdrop-filter: blur( 20px );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-body{
-  background-color:#0B192E ;
+body {
+  background-color: #0b192e;
   position: relative;
 }
-*,*::after,*::before{
-  /* outline: red 1px solid; */
-}
-@media (min-width:1024px){
-  .threeD{
-    text-shadow: 1px 1px 1px #5DF0CE,
-    1px 2px 1px #5DF0CE,
-    1px 3px 1px #5DF0CE,
-    1px 4px 1px #5DF0CE,
-    1px 5px 1px #5DF0CE,
-    1px 6px 1px #5DF0CE;
-    /* 1px 7px 1px #5DF0CE,
-    1px 8px 1px #5DF0CE,
-    1px 9px 1px #5DF0CE,
-    1px 10px 1px #5DF0CE,
-  1px 18px 6px rgba(16,16,16,0.4),
-  1px 22px 10px rgba(16,16,16,0.2),
-  1px 25px 35px rgba(16,16,16,0.2),
-  1px 30px 60px rgba(16,16,16,0.4); */
+/* @media (min-width: 1024px) {
+  .threeD {
+    text-shadow: 1px 1px 1px #5df0ce, 1px 2px 1px #5df0ce, 1px 3px 1px #5df0ce,
+      1px 4px 1px #5df0ce, 1px 5px 1px #5df0ce, 1px 6px 1px #5df0ce;
   }
-}
+} */
 
-.border{
+.border {
   border: solid 5px red;
 }
-.hasIcon:hover,.hasIcon:focus > .isIcon{
-  color: #5DF0CE;
+.hasIcon:hover,
+.hasIcon:focus > .isIcon {
+  color: #5df0ce;
 }
 
-.loader{
+.loader {
   position: relative;
   transform: skewY(-15deg) translateX(50px) translateY(50px);
 }
-.loader::before{
+.loader::before {
   content: '';
   position: absolute;
   top: 100px;
   width: 300px;
   height: 200px;
-  background: rgba(0, 0, 0,.1);
+  background: rgba(0, 0, 0, 0.1);
   transform: skewX(45deg);
   filter: blur(10px);
   transform-origin: bottom;
 }
-.loader > span{
+.loader > span {
   position: relative;
   width: 200px;
   height: 40px;
   background: #3e3f46;
   display: block;
-  transition: .5s;
+  transition: 0.5s;
   z-index: var(--i);
   animation: animate 5s ease-in-out infinite;
 }
 @keyframes animate {
-  0%,100%{
-      transform: translateX(-50px);
+  0%,
+  100% {
+    transform: translateX(-50px);
   }
-  50%{
-      transform: translateX(50px);
+  50% {
+    transform: translateX(50px);
   }
 }
-.loader >span:hover{
-  background: #5DF0CE;
+.loader > span:hover {
+  background: #5df0ce;
   transition: 0s;
 }
-.loader > span::before{
+.loader > span::before {
   content: '';
   position: absolute;
   top: 0;
   left: -150px;
   height: 100%;
   width: 150px;
-  background: #2e3133 ;
+  background: #2e3133;
   transform-origin: right;
   transform: skewY(45deg);
-  transition:.5s;
+  transition: 0.5s;
 }
-.loader > span:hover::before{
-  background: #5DF0CE;
+.loader > span:hover::before {
+  background: #5df0ce;
   transition: 0s;
 }
-.loader > span::after{
+.loader > span::after {
   content: '';
   position: absolute;
   top: -150px;
@@ -117,9 +103,67 @@ body{
   background: #2e3133;
   transform-origin: bottom;
   transform: skewX(45deg);
-  transition: .5s;
+  transition: 0.5s;
 }
-.loader > span:hover::after{
-  background: #5DF0CE;
-  transition: 0s  ;
+.loader > span:hover::after {
+  background: #5df0ce;
+  transition: 0s;
+}
+
+/* intro page animated button */
+.neon-button {
+  text-transform: uppercase;
+  position: relative;
+  color: #5df0ce;
+  font-size: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: #5df0ce 4px solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  background-color: transparent;
+  text-shadow: 0 0 0.125em hsl(0, 0, 50%), 0 0 0.25em #5df0ce;
+  box-shadow: inset 0 0 0.5em 0 #5df0ce, 0 0 0.5em #5df0ce;
+  transition: background-color linear 300ms;
+}
+
+/* bottom shadow */
+.neon-button::before {
+  content: '';
+  position: absolute;
+  background: #5df0ce;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+  transition: opacity 300ms linear;
+}
+.neon-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 2em 0.5em #5df0ce;
+  opacity: 0;
+  transition: opacity linear 300ms;
+}
+.neon-button:hover::after {
+  opacity: 1;
+}
+.neon-button:hover::before {
+  opacity: 1;
+}
+.neon-button:hover,
+.neon-button:focus {
+  background: #5df0ce;
+  color: #1d5880;
+  text-shadow: none;
+}
+
+.neonText {
+  color: #5df0ce;
+  text-shadow: 0 0 5px #5df0ce;
 }
