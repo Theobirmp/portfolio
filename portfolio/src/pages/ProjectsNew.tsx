@@ -2,9 +2,6 @@ import ProjectCardNew from '../components/ProjectCardNew';
 import { newCardData } from '../data/projectData';
 import { v4 as uuidv4 } from 'uuid';
 import { motion } from 'framer-motion';
-// type projectsNewType = {
-//   children: React.ReactNode;
-// };
 const ProjectsNew = () => {
   return (
     //page container
