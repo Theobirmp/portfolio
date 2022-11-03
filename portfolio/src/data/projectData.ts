@@ -66,6 +66,12 @@ export const newCardData = [
     link: 'https://github.com/Theobirmp/fb-like-mui',
   },
   {
+    name: 'Portfolio Template',
+    img: 'img/projectScreenshots/portfolioTemplate.png',
+    technologies: ['React,', ' Tailwind,', ' Framer Motion'],
+    link: 'https://portfolio-template-navy.vercel.app/',
+  },
+  {
     name: 'Food Store Home Page',
     img: 'img/projectScreenshots/foodDesktop.png',
     technologies: ['HTML,', ' SASS', ' Vanilla JS'],
