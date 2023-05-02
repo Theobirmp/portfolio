@@ -6,9 +6,9 @@ import '../index.css';
 const Page1 = () => {
   return (
     <motion.section
-      className="py-10 relative w-screen h-screen bg-[#0B192E] flex justify-center items-center"
+      className="py-10 relative w-[100vw] h-screen bg-[#0B192E] flex justify-center items-center"
       initial={{ x: '-100vw' }}
-      animate={{ x: 0, transition: { duraion: 1 } }}
+      animate={{ x: 0, transition: { duration: 1 } }}
       exit={{ x: '100vw' }}
     >
       <header className=" text-2xl md:text-[4.25vw] text-white w-[100%] h-[100%] flex flex-col lg:flex-row">
@@ -17,7 +17,6 @@ const Page1 = () => {
           animate={{ opacity: 1, transition: { delay: 5, duration: 2 } }}
           className="p-4 lg:p-0 flex-1 h-[100%] flex  justify-center items-center"
         >
-          {/* <img src={burger} alt="creator" /> */}
           <AnimatedBoxes />
         </motion.div>
         <motion.h1
@@ -83,21 +82,7 @@ const Page1 = () => {
           </motion.div>
         </motion.h1>
       </header>
-      {/* <motion.button
-        initial={{ x: '-100vw' }}
-        animate={{ x: 0, transition: { delay: 5, duration: 1 } }}
-        whileHover={{ scale: 1.2 }}
-        whileFocus={{ scale: 1.2 }}
-        className="absolute bottom-10 right-10 rounded-full bg-[#1d5880] w-[90px] h-[45px] md:w-[140px] md:h-[70px] text-[#5DF0CE]"
-      >
-        <Link
-          className="w-[100%] h-[100%] flex items-center justify-center text-xl md:text-4xl "
-          to="/about"
-        >
-          Home
-        </Link>
-      </motion.button> */}
-      <div className="absolute bottom-20 right-10">
+      <div className="absolute bottom-4 right-4 sm:bottom-20 sm:right-10 xl:bottom-28 xl:right-20">
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 5, duration: 1 } }}

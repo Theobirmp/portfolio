@@ -13,7 +13,7 @@ const ProjectCardNew = ({
   link,
 }: projectCardNewType) => {
   return (
-    <div className="py-2 px-1 max-h-[400px] max-w-[400px] clear text-white flex flex-col gap-4">
+    <div className=" py-2 px-1 max-h-[400px] max-w-[400px] clear text-white flex flex-col gap-4">
       <header>
         <h3 className="pl-2 uppercase font-bold text-white opacity-90">
           {name}

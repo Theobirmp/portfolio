@@ -9,9 +9,9 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 0.2, duraion: 2 } }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-[#0B192E] flex flex-col justify-center items-center text-white"
+      className="min-h-screen max-w-[90%] bg-[#0B192E] flex flex-col justify-center items-center text-white"
     >
-      <section className="w-[100%] h-[100%] mt-44">
+      <section className="w-[100%] h-[100%] mt-44 ">
         <header className="text-4xl text-[#5DF0CE] font-bold text-center relative z-30">
           <h3 className="px-2 text-center">Check Out Some of my Projects </h3>
         </header>
